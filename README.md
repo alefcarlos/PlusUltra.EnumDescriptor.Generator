@@ -37,7 +37,7 @@ namespace EnumStringExtensionsNamespace
                 SampleConsole.MyEnum.Value1 => "Custom 1",
                 SampleConsole.MyEnum.Value2 => nameof(SampleConsole.MyEnum.Value2),
                 SampleConsole.MyEnum.ValueN => "Custom Value N",
-                _ => value.ToString()
+                _ => throw new ArgumentException(message: "Invalid enum value", paramName: nameof(value))
             };
         }
     }

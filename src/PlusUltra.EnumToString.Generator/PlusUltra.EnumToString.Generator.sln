@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlusUltra.EnumToString.Generator", "PlusUltra.EnumToString.Generator.csproj", "{0EE36FE4-9A49-4D8E-B65C-EED9C21B64DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{8E37AF89-2431-4CDE-B200-B7620AB6CBA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleConsole", "..\samples\SampleConsole\SampleConsole.csproj", "{95A5E4DD-75F0-4947-9DBC-09438DB9A9AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0EE36FE4-9A49-4D8E-B65C-EED9C21B64DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE36FE4-9A49-4D8E-B65C-EED9C21B64DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE36FE4-9A49-4D8E-B65C-EED9C21B64DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE36FE4-9A49-4D8E-B65C-EED9C21B64DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A5E4DD-75F0-4947-9DBC-09438DB9A9AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A5E4DD-75F0-4947-9DBC-09438DB9A9AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A5E4DD-75F0-4947-9DBC-09438DB9A9AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A5E4DD-75F0-4947-9DBC-09438DB9A9AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{95A5E4DD-75F0-4947-9DBC-09438DB9A9AB} = {8E37AF89-2431-4CDE-B200-B7620AB6CBA6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04AD5A0F-646B-40AD-9D26-8820142E9028}
+	EndGlobalSection
+EndGlobal

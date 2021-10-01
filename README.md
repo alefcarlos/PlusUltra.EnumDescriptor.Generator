@@ -1,4 +1,4 @@
-# Enum to String Source Generator
+# Enum description generator
 
 This generates a `GetDescription` method for some enumerations
 

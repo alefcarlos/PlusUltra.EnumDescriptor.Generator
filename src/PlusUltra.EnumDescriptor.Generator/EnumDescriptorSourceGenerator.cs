@@ -79,7 +79,7 @@ namespace System
                 }
 
                 sb.Append(@"
-                _ => value.ToString()
+                _ => throw new ArgumentException(message: ""Invalid enum value"", paramName: nameof(value))
             };
         }
 ");

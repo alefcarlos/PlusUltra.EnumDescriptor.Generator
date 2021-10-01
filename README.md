@@ -25,11 +25,10 @@ public enum MyEnum
 This example will generate:
 
 ```csharp
-namespace EnumStringExtensionsNamespace
+namespace System
 {
     public static class EnumStringExtensions
-    {      
-
+    {   
         public static string GetDescription(this Namespace.MyEnum value)
         {
             return value switch

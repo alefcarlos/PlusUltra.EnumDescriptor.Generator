@@ -1,17 +1,17 @@
 # Enum to String Source Generator
 
-The source generator generates a `GetDescription` method for some enumerations
+This generates a `GetDescription` method for some enumerations
 
 ## Get Started
 
-All enums with `EnumToStringAttribute` will be selected to process 
+All enums with `GenerateEnumDescriptorAttribute` will be selected to process 
 
 > You can customiza the value using `DescriptionAttribute`
 
 ## Example
 
 ```csharp
-[EnumToString]
+[GenerateEnumDescriptor]
 public enum MyEnum
 {
     [Description("Custom 1")]

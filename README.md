@@ -1,6 +1,6 @@
 # Enum to String Source Generator
 
-The source generator generates a `ToDescription` method for some enumerations
+The source generator generates a `GetDescription` method for some enumerations
 
 ## Get Started
 
@@ -30,7 +30,7 @@ namespace EnumStringExtensionsNamespace
     public static class EnumStringExtensions
     {      
 
-        public static string ToDescription(this Namespace.MyEnum value)
+        public static string GetDescription(this Namespace.MyEnum value)
         {
             return value switch
             {

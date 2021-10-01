@@ -61,7 +61,7 @@ namespace EnumStringExtensionsNamespace
             {
 
                 sb.Append($@"
-        public static string ToDescription(this {item.FullName} value)
+        public static string GetDescription(this {item.FullName} value)
         {{
             return value switch
             {{

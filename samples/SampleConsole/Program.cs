@@ -9,13 +9,13 @@ namespace SampleConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(MyEnum.Value1.ToDescription());
-            Console.WriteLine(MyEnum.Value2.ToDescription());
-            Console.WriteLine(MyEnum.ValueN.ToDescription());
+            Console.WriteLine(MyEnum.Value1.GetDescription());
+            Console.WriteLine(MyEnum.Value2.GetDescription());
+            Console.WriteLine(MyEnum.ValueN.GetDescription());
 
-            Console.WriteLine(MyEnumNotOutro.OutroValue.ToDescription());
-            Console.WriteLine(MyEnumNotOutro.OutroValue2.ToDescription());
-            Console.WriteLine(MyEnumNotOutro.OutroValueN.ToDescription());
+            Console.WriteLine(MyEnumNotOutro.OutroValue.GetDescription());
+            Console.WriteLine(MyEnumNotOutro.OutroValue2.GetDescription());
+            Console.WriteLine(MyEnumNotOutro.OutroValueN.GetDescription());
         }
     }
 

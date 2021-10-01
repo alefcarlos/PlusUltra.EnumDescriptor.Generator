@@ -9,7 +9,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\src\PlusUltra.EnumToString.Generator\PlusUltra.EnumToString.Generator.csproj"
+	  <ProjectReference Include="..\..\src\PlusUltra.EnumDescriptor.Generator\PlusUltra.EnumDescriptor.Generator.csproj"
 						OutputItemType="Analyzer"
                       ReferenceOutputAssembly="false"/>
 	</ItemGroup>

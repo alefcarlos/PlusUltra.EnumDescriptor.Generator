@@ -6,25 +6,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace PlusUltra.EnumToString.Generator
+namespace PlusUltra.EnumDescriptor.Generator
 {
     [Generator]
-    public sealed partial class EnumToStringSourceGenerator : ISourceGenerator
+    public sealed partial class EnumDescriptorSourceGenerator : ISourceGenerator
     {
         private const string AttributeText = @"
 #nullable enable
 [System.Diagnostics.Conditional(""EnumToString_Attributes"")]
 [System.AttributeUsage(System.AttributeTargets.Enum, AllowMultiple = false)]
-internal sealed class EnumToStringAttribute : System.Attribute
+internal sealed class GenerateEnumDescriptor : System.Attribute
 {
-    public EnumToStringAttribute()
-    {
-    }
 }
 ";
         public void Initialize(GeneratorInitializationContext context)
         {
-            context.RegisterForPostInitialization(ctx => ctx.AddSource("EnumToStringAttribute.g.cs", SourceText.From(AttributeText, Encoding.UTF8)));
+            context.RegisterForPostInitialization(ctx => ctx.AddSource("GenerateEnumDescriptorAttribute.g.cs", SourceText.From(AttributeText, Encoding.UTF8)));
             context.RegisterForSyntaxNotifications(() => new MySyntaxReceiver());
         }
 
@@ -33,7 +30,7 @@ internal sealed class EnumToStringAttribute : System.Attribute
             var receiver = context.SyntaxReceiver as MySyntaxReceiver;
 
             var compilation = context.Compilation;
-            var attributeSymbol = compilation.GetTypeByMetadataName("EnumToStringAttribute");
+            var attributeSymbol = compilation.GetTypeByMetadataName("GenerateEnumDescriptor");
             var descriptionAttrSymbol = compilation.GetTypeByMetadataName("System.ComponentModel.DescriptionAttribute");
 
             ITypeSymbol GetSymbol(EnumDeclarationSyntax declation)
@@ -52,7 +49,7 @@ internal sealed class EnumToStringAttribute : System.Attribute
 
             StringBuilder sb = new();
             sb.Append(@"
-namespace EnumStringExtensionsNamespace
+namespace System
 {
     public static class EnumStringExtensions
     {      
@@ -92,7 +89,7 @@ namespace EnumStringExtensionsNamespace
     }
 }");
 
-            context.AddSource("EnumToStringExtensions.g.cs", SourceText.From(sb.ToString(), Encoding.UTF8));
+            context.AddSource("EnumDescriptionExtensions.g.cs", SourceText.From(sb.ToString(), Encoding.UTF8));
         }
 
         private struct EnumMembersProcessor

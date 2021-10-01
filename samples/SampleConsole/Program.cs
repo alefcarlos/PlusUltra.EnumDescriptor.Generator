@@ -1,10 +1,9 @@
 ﻿using System;
 using System.ComponentModel;
-using EnumStringExtensionsNamespace;
 
 namespace SampleConsole
 {
-    using Alef.Carlos;
+    using Name.Space;
     public class Program
     {
         static void Main(string[] args)
@@ -19,7 +18,7 @@ namespace SampleConsole
         }
     }
 
-    [EnumToString]
+    [GenerateEnumDescriptor]
     public enum MyEnum
     {
         [Description("Valor 1")]
@@ -39,9 +38,9 @@ namespace SampleConsole
     }
 }
 
-namespace Alef.Carlos
+namespace Name.Space
 {
-    [EnumToString]
+    [GenerateEnumDescriptor]
     public enum MyEnumNotOutro
     {
         [Description("Outro Valor 1")]

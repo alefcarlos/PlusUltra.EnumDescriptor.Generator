@@ -43,3 +43,10 @@ namespace EnumStringExtensionsNamespace
     }
 }
 ```
+
+Now you can use `GetDescription` instead of `ToString`;
+
+```cshap
+MyEnum value = MyEnum.Value1;
+Console.WriteLine(value.GetDescription());
+```

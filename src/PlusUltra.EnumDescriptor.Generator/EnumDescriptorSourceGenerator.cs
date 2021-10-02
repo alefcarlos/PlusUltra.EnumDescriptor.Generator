@@ -12,8 +12,7 @@ namespace PlusUltra.EnumDescriptor.Generator
     public sealed partial class EnumDescriptorSourceGenerator : ISourceGenerator
     {
         private const string AttributeText = @"
-#nullable enable
-[System.Diagnostics.Conditional(""EnumToString_Attributes"")]
+[System.Diagnostics.Conditional(""GenerateEnumDescriptor_Attributes"")]
 [System.AttributeUsage(System.AttributeTargets.Enum, AllowMultiple = false)]
 internal sealed class GenerateEnumDescriptor : System.Attribute
 {
@@ -46,6 +45,10 @@ internal sealed class GenerateEnumDescriptor : System.Attribute
                 return (typeSymbol.GetAttributes().Any(x => x.AttributeClass.Equals(attributeSymbol, SymbolEqualityComparer.Default)));
             })
             .Select(item => new EnumProcessor(GetSymbol(item), descriptionAttrSymbol!));
+
+
+            if(!values.Any())
+                return;
 
             StringBuilder sb = new();
             sb.Append(@"

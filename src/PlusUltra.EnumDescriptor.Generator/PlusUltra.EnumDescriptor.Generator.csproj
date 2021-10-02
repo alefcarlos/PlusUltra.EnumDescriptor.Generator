@@ -9,9 +9,10 @@
 		<RepositoryType>git</RepositoryType>
 		<Authors>Alef Carlos</Authors>
 
-		<AssemblyVersion>1.0.1</AssemblyVersion>
-		<Version>1.0.1</Version>
-		<FileVersion>1.0.1</FileVersion>
+		<AssemblyVersion>1.0.2</AssemblyVersion>
+		<Version>1.0.2</Version>
+		<FileVersion>1.0.2</FileVersion>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<!-- Generates a package at build -->
@@ -30,5 +31,9 @@
 	<ItemGroup>
 		<!-- Package the generator in the analyzer directory of the nuget package -->
 		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 </Project>

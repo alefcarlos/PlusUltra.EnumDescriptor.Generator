@@ -1,4 +1,6 @@
-[![ci](https://github.com/alefcarlos/PlusUltra.EnumDescriptor.Generator/actions/workflows/ci.yml/badge.svg)](https://github.com/alefcarlos/PlusUltra.EnumDescriptor.Generator/actions/workflows/ci.yml)
+| |  |
+|--|--|
+|[![ci](https://github.com/alefcarlos/PlusUltra.EnumDescriptor.Generator/actions/workflows/ci.yml/badge.svg)](https://github.com/alefcarlos/PlusUltra.EnumDescriptor.Generator/actions/workflows/ci.yml)|[![ci](https://img.shields.io/static/v1?label=nuget&message=download&color=brightgreen)](https://www.nuget.org/packages/PlusUltra.EnumDescriptor.Generator/)|
 
 # Enum description generator
 

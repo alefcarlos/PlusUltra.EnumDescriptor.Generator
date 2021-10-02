@@ -1,3 +1,5 @@
+[![dotnet test](https://github.com/alefcarlos/PlusUltra.EnumDescriptor.Generator/actions/workflows/tests.yml/badge.svg)](https://github.com/alefcarlos/PlusUltra.EnumDescriptor.Generator/actions/workflows/tests.yml)
+
 # Enum description generator
 
 This generates a `GetDescription` method for Enum

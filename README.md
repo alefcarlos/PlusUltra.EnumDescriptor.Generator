@@ -1,12 +1,12 @@
 # Enum description generator
 
-This generates a `GetDescription` method for some enumerations
+This generates a `GetDescription` method for Enum
 
 ## Get Started
 
 All enums with `GenerateEnumDescriptorAttribute` will be selected to process 
 
-> You can customiza the value using `DescriptionAttribute`
+> You can customize the value using `DescriptionAttribute`
 
 ## Example
 

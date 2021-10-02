@@ -4,7 +4,15 @@
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
+		<PackageProjectUrl>https://github.com/alefcarlos/PlusUltra.EnumDescriptor.Generator</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/alefcarlos/PlusUltra.EnumDescriptor.Generator.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<Authors>Alef Carlos</Authors>
 
+		<AssemblyVersion>1.0.1</AssemblyVersion>
+		<Version>1.0.1</Version>
+		<FileVersion>1.0.1</FileVersion>
+		
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<!-- Generates a package at build -->
 		<IncludeBuildOutput>false</IncludeBuildOutput>

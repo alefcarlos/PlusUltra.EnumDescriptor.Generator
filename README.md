@@ -8,7 +8,7 @@ All enums with `GenerateEnumDescriptorAttribute` will be selected to process
 
 > You can customize the value using `DescriptionAttribute`
 
-## Example
+### Using attribute
 
 ```csharp
 [GenerateEnumDescriptor]

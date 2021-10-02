@@ -1,4 +1,4 @@
-[![dotnet test](https://github.com/alefcarlos/PlusUltra.EnumDescriptor.Generator/actions/workflows/tests.yml/badge.svg)](https://github.com/alefcarlos/PlusUltra.EnumDescriptor.Generator/actions/workflows/tests.yml)
+[![ci](https://github.com/alefcarlos/PlusUltra.EnumDescriptor.Generator/actions/workflows/ci.yml/badge.svg)](https://github.com/alefcarlos/PlusUltra.EnumDescriptor.Generator/actions/workflows/ci.yml)
 
 # Enum description generator
 

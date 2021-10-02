@@ -8,7 +8,11 @@ All enums with `GenerateEnumDescriptorAttribute` will be selected to process
 
 > You can customize the value using `DescriptionAttribute`
 
-### Using attribute
+### Installing
+
+`dotnet add package PlusUltra.EnumDescriptor.Generator`
+
+### Decorating enums
 
 ```csharp
 [GenerateEnumDescriptor]

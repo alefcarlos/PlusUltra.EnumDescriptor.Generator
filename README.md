@@ -55,3 +55,10 @@ Now you can use `GetDescription` instead of `ToString`;
 MyEnum value = MyEnum.Value1;
 Console.WriteLine(value.GetDescription());
 ```
+
+### Materials 
+
+ - https://github.com/dotnet/roslyn/blob/main/docs/features/source-generators.cookbook.md
+ - https://www.infoq.com/articles/CSharp-Source-Generator/
+ - https://levelup.gitconnected.com/four-ways-to-generate-code-in-c-including-source-generators-in-net-5-9e6817db425
+ - https://github.com/meziantou/Meziantou.Framework/tree/main/src/Meziantou.Framework.FastEnumToStringGenerator

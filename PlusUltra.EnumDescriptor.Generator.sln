@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlusUltra.EnumDescriptor.Generator", "src\PlusUltra.EnumDescriptor.Generator\PlusUltra.EnumDescriptor.Generator.csproj", "{D400D094-C050-4B0E-BA91-61F40EDB56BE}"
 EndProject
@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleConsole", "samples\Sa
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5DE20BD7-CADE-43CF-9B83-0A82D96743D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlusUltra.EnumDescriptor.Generator.Tests", "tests\PlusUltra.EnumDescriptor.Generator.Tests\PlusUltra.EnumDescriptor.Generator.Tests.csproj", "{58C8E320-17C6-42FA-A440-8D39DBD237B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlusUltra.EnumDescriptor.Generator.Tests", "tests\PlusUltra.EnumDescriptor.Generator.Tests\PlusUltra.EnumDescriptor.Generator.Tests.csproj", "{58C8E320-17C6-42FA-A440-8D39DBD237B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bench", "bench", "{BC2396D8-5005-4DC3-82F8-BB9908478ED2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchmarkApp", "bench\BenchmarkApp\BenchmarkApp.csproj", "{ADDB8DA3-7CC0-4288-9684-2503B326B7F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,6 +63,18 @@ Global
 		{58C8E320-17C6-42FA-A440-8D39DBD237B5}.Release|x64.Build.0 = Release|Any CPU
 		{58C8E320-17C6-42FA-A440-8D39DBD237B5}.Release|x86.ActiveCfg = Release|Any CPU
 		{58C8E320-17C6-42FA-A440-8D39DBD237B5}.Release|x86.Build.0 = Release|Any CPU
+		{ADDB8DA3-7CC0-4288-9684-2503B326B7F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADDB8DA3-7CC0-4288-9684-2503B326B7F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADDB8DA3-7CC0-4288-9684-2503B326B7F7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ADDB8DA3-7CC0-4288-9684-2503B326B7F7}.Debug|x64.Build.0 = Debug|Any CPU
+		{ADDB8DA3-7CC0-4288-9684-2503B326B7F7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ADDB8DA3-7CC0-4288-9684-2503B326B7F7}.Debug|x86.Build.0 = Debug|Any CPU
+		{ADDB8DA3-7CC0-4288-9684-2503B326B7F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADDB8DA3-7CC0-4288-9684-2503B326B7F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADDB8DA3-7CC0-4288-9684-2503B326B7F7}.Release|x64.ActiveCfg = Release|Any CPU
+		{ADDB8DA3-7CC0-4288-9684-2503B326B7F7}.Release|x64.Build.0 = Release|Any CPU
+		{ADDB8DA3-7CC0-4288-9684-2503B326B7F7}.Release|x86.ActiveCfg = Release|Any CPU
+		{ADDB8DA3-7CC0-4288-9684-2503B326B7F7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +82,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{196AB720-4621-43FA-8665-483F81018108} = {CA565596-3663-4856-8847-9431DC62A075}
 		{58C8E320-17C6-42FA-A440-8D39DBD237B5} = {5DE20BD7-CADE-43CF-9B83-0A82D96743D2}
+		{ADDB8DA3-7CC0-4288-9684-2503B326B7F7} = {BC2396D8-5005-4DC3-82F8-BB9908478ED2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {98A34B31-9827-4F83-8DDC-E2E3465A79D9}
